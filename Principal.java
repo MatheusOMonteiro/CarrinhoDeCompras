@@ -9,7 +9,7 @@ public class Principal {
         estoque.adicionaProduto(new Perifericos("Teclado Mecânico K8", 450.00, 30, 18, "Branco"));
         System.out.println("--- Detalhes dos Produtos em Estoque ---");
         for (ProdutoEstoque p : estoque.getProdutos()) {
-            System.out.println("- " + p.exibirDetalhes());
+            System.out.println("- " + p.exibirDetalhes() + " - R$" + p.getPreco() + " - " + p.getQtdProduto());
         }
         System.out.println();
 
